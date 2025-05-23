@@ -1,0 +1,370 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+html{
+   scroll-behavior: smooth;
+}
+
+/* body */
+body{
+   color: #000000;
+   font-family: "Outfit", sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+}
+/* -- default css -- */
+p{
+   line-height: 30px;
+   font-size: 16px;
+}
+h1,h2,h3,h4,h5,h6{
+   font-family: "Outfit", sans-serif;
+   font-weight: 400;
+}
+.fw-semibold {font-weight: 500;}
+a{
+   text-decoration: none;
+}
+
+ul, ol, figure{
+   margin-bottom: 0;
+}
+
+.text-justify{
+   text-align: justify;
+}
+
+/*  */
+.satrangi, .mortgage {
+    padding: 4% 8%;
+}
+.win-section img{
+   width:49%;
+}
+.company-logo{
+    background: #fff;
+    border-radius: 0px 0px 0px 60px;
+        align-items: center;
+}
+.win-gift{
+padding-bottom:10%;padding-top: 2%;
+}
+.gift{
+   padding: 20px;
+   width: 33%;
+   height: 100%;
+   align-content: center;
+}
+.res-img  {display: none;}
+.details-wrapper{background-color: #F6F4FF;}
+.steps-section {padding:70px 0px 40px;}
+.title {font-size: 30px;margin-bottom:25px;color: #560E96;}
+.title span {color: #4c1d95;}
+.title2 {color: #4c1d95;}
+.title2::after{
+   content: "";
+   width:51%;
+   height: 0.5px;
+   background-color: #b7b7b7;
+   display: block;
+   margin: 10px auto 0;
+   text-align: center;
+}
+.title2::before{
+   content: "";
+   width: 51%;
+   height:0.5px;
+   background-color: #b7b7b7;
+   display: block;
+   margin:0 auto 10px;
+   text-align: center;
+}
+.title3 {font-size: 30px;margin-bottom:25px;color: #560E96;}
+.form-section{
+   padding:50px 0px 70px;
+}
+.form-section form{
+  padding:40px 110px;
+  background:#9D8FE5;
+  border-radius: 10px;
+    border: 1px solid #E4CBB2;
+    position: relative;
+}
+  .form-section form h3 {
+      margin-bottom:40px;
+      font-size:32px;
+      color: #ffffff;
+      text-align: center;
+    }
+  .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap:40px;
+      max-width:800px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      position: relative;
+      flex: 1 1 45%;
+      text-align: center;
+    }
+    .form-section form::after {
+      content: '';
+      background-image: url(../images/ribbionright.png);
+      background-repeat: no-repeat;
+      width:29%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: -28%;
+    left: -78px;
+    }
+    .form-section form::before {
+      content: '';
+      background-image: url(../images/ribbionleft.png);
+      background-repeat: no-repeat;
+      width:29%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      bottom: -29%;
+    right: -80px;
+    }
+.bottom-ribbion img{
+  position: absolute;
+    left: 48%;
+}
+
+    .form-group input {
+      width:85%;
+      padding: 18px 12px 6px;
+      font-size: 16px;
+      border: none;
+      background: #fff;
+      border: 1px solid #560E96;
+      transition: box-shadow 0.3s ease;
+       color: #560E96;
+    }
+
+    .form-group input:focus {
+      outline: none;
+    }
+.form-group input::placeholder {
+  color: #9D8FE5;
+  opacity: 1; 
+}
+    .form-group label {
+      position: absolute;
+      left:40px;
+      top: 16px;
+      font-size: 14px;
+      color:#9D8FE5;
+      background: white;
+      padding: 0 4px;
+      pointer-events: none;
+      transition: all 0.2s ease;
+    }
+
+    .form-group label .required {
+      color: red;
+      margin-left: 2px;
+    }
+
+    .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label {
+      top: -8px;
+      left: 40px;
+      font-size: 13px;
+      color: #4c1d95;
+    }
+    .submit-btn {
+      background-color: #ffffff;
+      color: #4c1d95;
+      border:1px solid #4c1d95;;
+      padding: 7px 20px;
+      font-size: 16px;
+      border-radius:50px;
+      cursor: pointer;
+      width:20%;
+      transition: background 0.3s ease;
+      margin-left:4%;
+    }
+
+    .submit-btn:hover {
+      background-color: #37117a;color: #fff;
+    }
+    .big {background-image: url(../images/Objects.png);background-repeat: no-repeat; background-position: bottom;
+    padding-bottom:12px;background-size: contain;}
+.steps {
+  padding: 0 10%;
+  text-align: center;
+}
+  .steps-container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .step {
+      position: relative;
+      text-align: center;
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .step::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      width:95%;
+      height:1px;
+      background-color: #c4c4c4;
+      z-index: 0;
+    }
+
+    .step::after {
+      left:65%;
+    }
+
+    .step:first-child::before,
+    .step:last-child::after {
+      display: none;
+    }
+
+    .circle {
+      width:41px;
+      height:41px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-weight: bold;
+      font-size:24px;
+      z-index: 1;
+      position: relative;
+      background: #ffffff;
+      color:#4c1d95;
+    }
+.circle::before {
+  content: '';
+  position: absolute;
+ border:1px solid #4c1d95;
+  width:40px;
+  height:40px;
+  border-radius: 50px;
+  z-index: -1111;
+  padding: 24px;
+}
+    .filled {
+      background-color: #4c1d95;
+      color: white;
+      border: 2px solid #4c1d95;
+    }
+
+    .description {
+      font-size: 18px;
+    }
+
+    .step.active .description {
+      color: #4c1d95;
+      font-weight: 500;
+    }
+
+    .step:hover .description {
+      color: #4c1d95;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .step:hover .circle {
+      background-color: #4c1d95;
+      color: #fff;
+   }
+.privacy p{font-size: 15px;}
+.copyright p, .copyright a{text-align: center;color: #363636 !important;font-size: 16px;}
+
+
+@media (min-width:1100px) and (max-width:1366px) {
+  .form-section {padding: 50px 130px 70px;}
+}
+  @media (max-width:1024px) {
+  .company-logo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .win-section img {margin-top: 5%;}
+  .win-section{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+img.res-img{display: block !important;width: 100%;background-image: url(../images/bg.png) !important;padding-top: 50px;}
+  .header-top-section  {background: #1a0043 !important;}
+  .banner-top {display: block !important;}
+  .form-section form::after {
+    width: 85%;
+    top: -33%;
+    left: 0;
+}
+.form-section form::before, .form-section form::after {display: none;}
+.bottom-ribbion img {left: 50%;}
+  .form-section form {padding:30px 20px 40px;}
+  .submit-btn {width:45%;margin-left:0%;}
+  .title2::before, .title2::after{width: 100%;}
+  .title3 {line-height:45px;}
+.form-group input {
+    width:100%;}
+ .steps{padding: 0;}   
+ .step::after {
+    left:65%;
+}
+}
+
+    @media (max-width: 768px) {
+  
+.form-group input {
+    width:100%;}
+ .steps{padding: 0;}   
+ .step::after {
+    left: 76%;
+}
+
+}
+
+    
+@media only screen and (max-width: 575px){
+  .company-logo {
+    position: absolute;
+    top: 0;
+  }
+  .win-section img {margin-top: 5%;}
+  .win-section{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+img.res-img{display: block !important;width: 100%;background-image: url(../images/bg.png) !important;padding-top: 50px;}
+  .header-top-section  {background: #1a0043 !important;}
+  .banner-top {display: block !important;}
+  .form-section form::after {
+    width: 85%;
+    top: -33%;
+    left: 0;
+}
+.form-section form::before, .form-section form::after {display: none;}
+.bottom-ribbion img {left: 50%;}
+  .form-section form {padding:30px 20px 40px;}
+  .submit-btn {width:45%;margin-left: 7%;}
+  .title2::before, .title2::after{width: 85%;}
+  .title3 {line-height:45px;}
+    .step::after, .step::before{display: none;}
+  .steps-container {
+    display: block;}
+    .step {margin-bottom: 30px;max-width: 100%;}
+    .form-group label, .form-group input:focus + label,
+    .form-group input:not(:placeholder-shown) + label  {left: 20px;}
+}
