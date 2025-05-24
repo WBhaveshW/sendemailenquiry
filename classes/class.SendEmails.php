@@ -20,8 +20,9 @@ class SendEmails{
             '</td><td ' . $bgcolor . '>Age</td><td>' .
             ((!empty($param['age']))?$param['age']:"Cool") .
             '</td></tr>';
-        $htmlContent .= '</table>';
-        $to = "bhavesh.w1998@gmail.com";
+        $htmlContent .= '</table>
+        Note: This is an automated email. Please do not reply to this message.';
+        $to = "bhavesh.w1998@gmail.com,info@mortgagegiantsinc.com";
         $subject = "Test Email via Gmail SMTP";
         $cc = '';
         $bcc = '';
